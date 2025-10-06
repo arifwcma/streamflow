@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score, mean_squared_error
 
-df = pd.read_csv(r"C:\Users\m.rahman\PythonProject\streamflow\data\merged.csv")
+df = pd.read_csv(r"data\merged.csv")
 
 df = df[(df["flow"] >= 0) & (df["level"] >= 0) & (df["flow"] <= 200)]
 
